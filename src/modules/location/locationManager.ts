@@ -179,7 +179,7 @@ export class LocationManager {
   stop() {
     MapboxGLLocationManager.stop();
 
-    if (this._isListening && this.subscription) {
+    if (this.subscription) {
       this.subscription.remove();
     }
 
